@@ -80,7 +80,6 @@ saveRDS(Lung, file = "20210517 R Code SCtransform filtered umap tsne Lung.rds")
 
 library(patchwork)
 library(ggplot2)
-DotPlot(Lung, features = markers.to.plot)
 
 lung.plot <- DotPlot(Lung, assay = "SCT", features = c("Adgre1","Atp10a","Blnk","C1qa","C1qb","C1qc","C4b","Car4","Ccl12","Ccl2","Ccl24","Ccl3","Ccl4","Ccl6","Ccl7","Ccl8","Ccl9","Ccr1","Ccr2","Ccr5","Ccr7","Cd14","Cd163","Cd36","Cd38","Cd4","Cd68","Cd86","Chil3","Colec12","Csf1r","Csf2ra","Csf2rb","Cx3cr1","Cxcl13","Cxcl14","Cxcl16","Cxcl2","Dpp4","Enpep","Fcgr1","Fcgr3","Fcna","Flvcr2","Folr2","Gas7","H2-Ab1","Hpgd","Ifnar1","Ifnar2","Ifngr1","Ifngr2","Il10","Il10ra","Il10rb","Il17ra","Il18","Il1b","Il21r","Il4ra","Il6ra","Itga9","Itgae","Itgam","Itgax","Junb","Krt79","Lacc1","Lamp1","Ly6g","Lyve1","Lyz2","Maf","Mafb","Marco","Mertk","Mrc1","Olfml3","Retnla","Scimp","Siglecf","Socs3","Tgm2","Tlr2","Tlr4","Tnf","Ttc9","Zbtb46")) +  RotatedAxis()
 
